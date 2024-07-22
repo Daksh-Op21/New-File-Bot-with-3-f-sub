@@ -14,19 +14,19 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7450654387:AAGuBPZxTv3CFABjVnoi_wlzAkL6RhwJLbs")
-APP_ID = int(os.environ.get("APP_ID", "29236719"))
-API_HASH = os.environ.get("API_HASH", "1ccf1bd0a86af974e3210a55f662c062")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6910649792:AAH86p1c_JFkPQyN8aI-D4-ijLUkG2Tu-B8")
+APP_ID = int(os.environ.get("APP_ID", "23404029"))
+API_HASH = os.environ.get("API_HASH", "e9fcfdc2f6aa5ce38914405c1d7270f1")
 
 
-OWNER = os.environ.get("OWNER", "Arpitbotmovies") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "893383574")) #Owner user id
+OWNER = os.environ.get("OWNER", "PeterParker3377") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "981072064")) #Owner user id
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://keshavptdr98:D8lbdQUW4euV07l4@cluster0.dok926y.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002222465571"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002236830447"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002246200185"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002134263305"))
 
 
 SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nThis is Telugu Movies World Files Bot.")
 
 try:
     ADMINS=[7085541484]
