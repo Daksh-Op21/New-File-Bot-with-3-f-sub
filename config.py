@@ -51,7 +51,7 @@ except ValueError:
 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", ➡ Join :- @TMW_Pa)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION",  Join :- @TMW_Pa)
 
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
