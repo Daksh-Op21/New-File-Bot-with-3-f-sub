@@ -29,7 +29,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002246200185"))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002134263305"))
 
 
-SECONDS = int(os.getenv("SECONDS", "20")) # auto delete in seconds
+SECONDS = int(os.getenv("SECONDS", "60")) # auto delete in seconds
 
 
 
