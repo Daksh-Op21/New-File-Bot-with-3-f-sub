@@ -86,20 +86,20 @@ async def start_command(client: Client, message: Message):
 
             try:
                 f = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
-                ms.append(f)
+                asyncio.sleep(SECONDS)
                 await f.delete()
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 f = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
-                ms.append(f)
+                await asyncio.sleep(SECONDS)
+                await f.delete()
                 
             except:
                 pass
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.")
-        await asyncio.sleep(SECONDS)
-        for i in ms:
-            await i.delete()
-        await k.edit_text("Your video / file is successfully deleted !")
+        
+
+        
 
 
         return
